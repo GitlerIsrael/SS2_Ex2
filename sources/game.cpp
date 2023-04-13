@@ -10,6 +10,12 @@ using namespace std;
 
 
 Game::Game(Player& pl1, Player& pl2):player1(pl1), player2(pl2){
+    //make sure Taken vector of each player is empty (if played a game we have to clear it) and make it winsNum equals to zero.
+    player1.clearTaken();
+    player1.clearWinsNum();
+    player2.clearTaken();
+    player2.clearWinsNum();
+
     this->turnsNum=0;
     this->drawsNum=0;
     this->Turns = vector<string>();

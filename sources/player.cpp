@@ -17,6 +17,10 @@ void Player::pushCardsStack(const Card& c){this->CardsStack.push_back(c);}
 
 void Player::pushTaken(const Card& c){this->Taken.push_back(c);}
 
+void Player::clearTaken(){
+    this->Taken.clear();
+}
+
 Card Player::popCardsStack(){
     Card c = this->CardsStack.back();
     this->CardsStack.pop_back();

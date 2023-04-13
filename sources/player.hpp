@@ -18,10 +18,13 @@ namespace ariel{
         int stacksize() const {return static_cast<int>(CardsStack.size());}
         int cardesTaken() const {return static_cast<int>(Taken.size());}
         void incrementWinsNum(){this->winsNum+=1;}
+        void clearWinsNum(){this->winsNum=0;}
+
         //outline
         void pushCardsStack(const Card& card);
         Card popCardsStack();
         void pushTaken(const Card& card);
+        void clearTaken();
 
         //constructor-
         explicit Player(string name);
