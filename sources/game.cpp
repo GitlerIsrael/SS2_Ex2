@@ -1,5 +1,6 @@
 //
 // Created by israel on 3/25/23.
+// i used the internet to find ideas for the way to shuffle the deck and spread it to the players.
 //
 #include <algorithm>
 #include <random>
